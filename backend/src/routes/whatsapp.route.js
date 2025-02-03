@@ -1,7 +1,6 @@
 const express = require('express');
 
 const {
-  onSendConsentSingle,
   onVerifyContacts,
   onVerification,
   onSendNotification,
@@ -52,9 +51,6 @@ whatsappRouter.post(
   '/bulk_marketing_notification',
   onSendTemplateNotificationMultiple
 );
-
-//consent message
-whatsappRouter.post('/consent', onSendConsentSingle);
 
 // Accepts GET requests at the /webhook endpoint. You need this URL to setup webhook initially.
 // info on verification request payload: https://developers.facebook.com/docs/graph-api/webhooks/getting-started#verification-requests
