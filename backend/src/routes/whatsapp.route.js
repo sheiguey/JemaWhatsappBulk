@@ -1,14 +1,6 @@
 const express = require('express');
 
 const {
-  onSendMessages,
-} = require('../controllers/whatsapp-controller/whatsappChatbot.controller');
-
-const {
-  onSendWialonNotificationMultiple,
-} = require('../controllers/whatsapp-controller/wialonNotification.controller');
-
-const {
   onSendConsentSingle,
   onVerifyContacts,
   onVerification,
@@ -60,9 +52,6 @@ whatsappRouter.post(
   '/bulk_marketing_notification',
   onSendTemplateNotificationMultiple
 );
-
-//wialon notifications
-whatsappRouter.post('/wialon_notifications', onSendWialonNotificationMultiple);
 
 //consent message
 whatsappRouter.post('/consent', onSendConsentSingle);
