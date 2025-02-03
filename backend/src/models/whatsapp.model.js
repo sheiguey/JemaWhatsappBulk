@@ -1,7 +1,6 @@
 const axios = require('axios');
 const { developement } = require('../config/whatsappApi');
 const { formatMessage } = require('../utils/formatMessage');
-const { getYmaneListNumbers } = require('../services/ymane.list.number');
 
 const token = developement.whatsapp_token;
 
