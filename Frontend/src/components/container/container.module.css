@@ -1,0 +1,31 @@
+.content{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 2rem 2rem;
+    position: relative;
+    margin-top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.title{ 
+    background-color: #00042C;
+    color: #FFFFFF;
+    border-radius: 15px  15px 5px 5px;
+    position: relative;
+    top: -3.4rem;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.title p{
+    margin: 0px;
+}
+
+@media screen and (max-width:750px){
+    .title p{ 
+        margin: 0;
+        font-size: 17px;
+        text-align: center;
+    }
+ }

@@ -1,0 +1,242 @@
+.form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input{
+    border-radius: 30px; 
+    padding: 1rem;
+    border: 1px solid #707070;
+}
+
+.select_input{
+    appearance: none;
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/assets/arrow.png');
+    background-size: 15px;
+    background-origin: content-box;
+    box-sizing: border-box;
+    color: #707070;
+}
+
+
+.option_style{
+    width: 50%;
+    font-weight: 600;
+    color: #707070;
+    transition: 0.6s;
+}
+
+.content{
+   border:1px solid #707070;
+   border-radius: 15px;
+   padding: 1rem;
+   font-weight: 600;
+   color: #707070;
+   width: 100%;
+}
+
+.contentGroup{
+  width: 100%;
+  position: relative;
+}
+
+.numberOfWords{
+   color: #7070706e; 
+   font-weight: 600;
+   font-size: 13px;
+   margin: 0;
+   bottom: 1rem;
+   right: 2rem;
+   position: absolute;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input_filelabel{
+    border:  1px solid #707070;
+    border-radius: 30px;
+    background-color: #E8EAEB;
+    text-align: center;
+    padding: 0.5rem 4rem;
+    color: #707070;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.input_filelabel:hover{
+    background-color: #039BE5;
+    transition: 0.5s;
+    color: #ffff;
+}
+ 
+.btn_submit{
+  cursor: pointer;
+  border: none;
+  background-color: #DE6738;
+  padding: 0.7rem 5.2rem;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.btn_submit:hover{
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.preview_content{
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #1C2545;
+    text-align: center;
+}
+
+.preview_content p{
+    margin: 0;
+    word-break: break-all;
+}
+
+.typeMediaError{
+    margin: 0;
+    word-break: break-all;
+    font-size: 12px;
+    color: red;
+}
+
+
+.preview_content img{
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.preview_content video{
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.campaign_type{
+   display: flex;
+   margin-right: 1rem;
+}
+
+.campaign_type p span{
+    font-weight: bold;
+ }
+
+ .divider{
+    margin-left: 1rem;
+    margin-right: 1rem;
+ }
+
+ .preview_btn{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+ }
+ .btn_edit{
+    background-color: #707070;
+    color: #E8EAEB;
+    border-radius:25px;
+    border: none;
+    padding: 0.7rem 4.5rem;
+    cursor: pointer;
+    &:hover{
+        font-weight: bold;
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+ }
+
+ .btn_submit{
+    background-color: #039BE5;
+    color: #E8EAEB;
+    border-radius:25px;
+    border: none;
+    padding: 0.7rem 3.5rem;
+    cursor: pointer;
+    &:hover{
+        font-weight: bold;
+        opacity: 0.8;
+        transition: 0.5s;
+    };
+    &:disabled{
+        background-color: rgba(128, 128, 128, 0.205);
+        color: #ffff;
+     }
+ }
+
+
+
+@media screen and (max-width:750px){
+    .btn{
+         justify-content: center;
+    }
+    
+    .btn .btn_submit{
+        padding: 0.7rem 3rem;
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .input_filelabel{
+        padding: 0.5rem 2rem;
+        font-size: 12px;
+        max-width: 100%;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .numberOfWords{
+        font-size: 10px;
+    }
+
+    .preview_content{
+        overflow-y: scroll;
+        max-height: 400px;
+        padding: 0.5rem 1rem;
+        p{
+            font-size: 12px;
+        }
+    
+    }
+
+    .campaign_type{
+        text-align: center;
+        p{
+            font-size: 13px;
+        }
+    } 
+
+    .preview_btn{
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 1rem;
+        button{
+           font-size: 13px;
+           padding :0.5rem 5rem;
+        }
+    }
+ 
+}
+
+ 

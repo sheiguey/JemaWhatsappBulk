@@ -1,0 +1,32 @@
+{
+    "name": "whatsap bulk messages plateform",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "install-server": "npm install --prefix backend",
+        "install-client": "npm install --prefix Frontend --production=false",
+        "install": "npm run install-client & npm run install-server ",
+        "start": "npm run start --prefix backend",
+        "server": "npm run watch --prefix backend",
+        "client": "npm run dev --prefix Frontend",
+        "watch": "npm run server & npm run client",
+        "test-server": "npm run test --prefix backend",
+        "test-client": "npm run test --prefix Frontend",
+        "test": "npm run test-server & npm run test-client",
+        "deploy": "npm run build --prefix Frontend"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://frankyshitcamtrack@github.com/frankyshitcamtrack/Whatsapp-Chatbot.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frankyshitcamtrack/Whatsapp-Chatbot.git/issues"
+    },
+    "homepage": "https://github.com/frankyshitcamtrack/Whatsapp-Chatbot.git#readme",
+    "dependencies": {
+        "server": "^1.0.39"
+    }
+}
