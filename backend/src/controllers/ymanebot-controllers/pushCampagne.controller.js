@@ -25,7 +25,7 @@ const phonId = developement.phone_number_id;
 
 async function WebHookListerer(req, res) {
   try {
-    const Err = req?.body?.entry[0]?.changes[0]?.value?.statuses[0]?.errors;
+    const Err = req.body.entry[0].changes[0].value.statuses[0].errors;
     if (Err) {
       console.log(Err);
       console.log(Err);
