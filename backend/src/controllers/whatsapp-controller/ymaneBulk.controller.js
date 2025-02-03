@@ -13,7 +13,6 @@ const {
   verifyContacts,
 } = require('../../models/whatsapp.model');
 
-const { getWialonContacts } = require('../../models/wialon.model');
 const { phoneFormat, formatArrPhones } = require('../../utils/fortmat-phone');
 const { developement } = require('../../config/whatsappApi');
 const { downloadVideo } = require('../../utils/download');
