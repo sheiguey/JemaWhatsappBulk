@@ -17,15 +17,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://frankyshitcamtrack@github.com/frankyshitcamtrack/Whatsapp-Chatbot.git"
+        "url": "git+https://sheiguey@github.com/sheiguey/JemaWhatsappBulk.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/frankyshitcamtrack/Whatsapp-Chatbot.git/issues"
+        "url": "https://sheiguey@github.com/sheiguey/JemaWhatsappBulk.git/issues"
     },
-    "homepage": "https://github.com/frankyshitcamtrack/Whatsapp-Chatbot.git#readme",
+    "homepage": "https://sheiguey@github.com/sheiguey/JemaWhatsappBulk.git#readme",
     "dependencies": {
         "server": "^1.0.39"
     }
